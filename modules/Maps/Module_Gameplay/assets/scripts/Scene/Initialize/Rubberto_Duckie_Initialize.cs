@@ -5,9 +5,9 @@ function Module_Gameplay::Rubberto_Duckie_Initialize(%this)
 
 %Vector_2D_Randomized_Offset="0 0";
 
-%Vector_2D_Randomized_Offset.X=getRandom(0+(%this.Vector_2D_Rubberto_Duckie_Size.X),%this.Vector_2D_World_Limits.X-(%this.Vector_2D_Rubberto_Duckie_Size.X));
+%Vector_2D_Randomized_Offset.X=getRandomF(0+(%this.Vector_2D_Rubberto_Duckie_Size.X),%this.Vector_2D_World_Limits.X-(%this.Vector_2D_Rubberto_Duckie_Size.X));
 
-%Vector_2D_Randomized_Offset.Y=getRandom(0+(%this.Vector_2D_Rubberto_Duckie_Size.Y),%this.Vector_2D_World_Limits.Y-(%this.Vector_2D_Rubberto_Duckie_Size.Y));
+%Vector_2D_Randomized_Offset.Y=getRandomF(0+(%this.Vector_2D_Rubberto_Duckie_Size.Y),%this.Vector_2D_World_Limits.Y-(%this.Vector_2D_Rubberto_Duckie_Size.Y));
 
 %Sprite_Rubberto_Duckie_Player=new Sprite()
 {

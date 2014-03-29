@@ -16,7 +16,7 @@ ParticleRadius=1;
 
 ShapeType="Polygon";
 
-PolygonSize=38.90;
+PolygonSize=40;
 
 Solid=false;
 
