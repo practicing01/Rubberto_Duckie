@@ -3,9 +3,9 @@ function Module_Gameplay::Goal_Initialize(%this)
 
 %Vector_2D_Randomized_Offset="0 0";
 
-%Vector_2D_Randomized_Offset.X=getRandom(0+(%this.Vector_2D_Goal_Size.X*0.5),%this.Vector_2D_World_Limits.X-(%this.Vector_2D_Goal_Size.X*0.5));
+%Vector_2D_Randomized_Offset.X=getRandom(0+(%this.Vector_2D_Goal_Size.X),%this.Vector_2D_World_Limits.X-(%this.Vector_2D_Goal_Size.X));
 
-%Vector_2D_Randomized_Offset.Y=getRandom(0+(%this.Vector_2D_Goal_Size.Y*0.5),%this.Vector_2D_World_Limits.Y-(%this.Vector_2D_Goal_Size.Y*0.5));
+%Vector_2D_Randomized_Offset.Y=getRandom(0+(%this.Vector_2D_Goal_Size.Y),%this.Vector_2D_World_Limits.Y-(%this.Vector_2D_Goal_Size.Y));
 
 %Sprite_Goal=new Sprite()
 {

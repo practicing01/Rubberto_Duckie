@@ -5,9 +5,9 @@ function Module_Gameplay::Rubberto_Duckie_Initialize(%this)
 
 %Vector_2D_Randomized_Offset="0 0";
 
-%Vector_2D_Randomized_Offset.X=getRandom(0+(%this.Vector_2D_Rubberto_Duckie_Size.X*0.5),%this.Vector_2D_World_Limits.X-(%this.Vector_2D_Rubberto_Duckie_Size.X*0.5));
+%Vector_2D_Randomized_Offset.X=getRandom(0+(%this.Vector_2D_Rubberto_Duckie_Size.X),%this.Vector_2D_World_Limits.X-(%this.Vector_2D_Rubberto_Duckie_Size.X));
 
-%Vector_2D_Randomized_Offset.Y=getRandom(0+(%this.Vector_2D_Rubberto_Duckie_Size.Y*0.5),%this.Vector_2D_World_Limits.Y-(%this.Vector_2D_Rubberto_Duckie_Size.Y*0.5));
+%Vector_2D_Randomized_Offset.Y=getRandom(0+(%this.Vector_2D_Rubberto_Duckie_Size.Y),%this.Vector_2D_World_Limits.Y-(%this.Vector_2D_Rubberto_Duckie_Size.Y));
 
 %Sprite_Rubberto_Duckie_Player=new Sprite()
 {
@@ -16,7 +16,7 @@ Position="0 0";
 Size=%this.Vector_2D_Rubberto_Duckie_Size;
 Image="Module_Gameplay:Image_Rubberto_Duckie";
 class="Class_Rubberto_Duckie";
-CollisionCallback="true";
+//CollisionCallback="true";
 SceneLayer=16;
 
 BlendColor="1.0 1.0 1.0 1.0";
@@ -31,13 +31,15 @@ Module_ID_Parent=%this;
 
 Collision_Shape_Index=-1;
 
+Bullet=true;
+
 };
 
 %Sprite_Rubberto_Duckie_Player.Position.X+=%Vector_2D_Randomized_Offset.X;
 
 %Sprite_Rubberto_Duckie_Player.Position.Y+=%Vector_2D_Randomized_Offset.Y;
 
-%Sprite_Rubberto_Duckie_Player.setCollisionGroups(0,26,30);
+%Sprite_Rubberto_Duckie_Player.setCollisionGroups(26,30);
 
 %Square_Size=%this.Vector_2D_Rubberto_Duckie_Size;
 

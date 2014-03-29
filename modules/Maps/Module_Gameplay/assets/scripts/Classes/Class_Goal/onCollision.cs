@@ -13,11 +13,4 @@ function Class_Goal::onCollision(%this,%Colliding_Object,%Collision_Details)
 
 %this.Module_ID_Parent.Gui_Text_Score.setText("Score:" SPC %this.Module_ID_Parent.Int_Score);
 
-/*if (%Colliding_Object.class$="Class_Rubberto_Duckie"&&!%Colliding_Object.getCollisionShapeIsSensor(getWord(%Collision_Details,1)))
-{
-
-schedule(0,0,"Gui_Gameplay::Go_Main_Menu",Gui_Gameplay);
-
-}*/
-
 }
