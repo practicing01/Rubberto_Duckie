@@ -1,0 +1,9 @@
+<ImageAsset
+    AssetName="Image_Caustics"
+    ImageFile="caustics_atlas.png"
+	CellCountX="4"
+    CellCountY="4"
+    CellWidth="256"
+    CellHeight="256"
+	Optimal_Resolution="1024 768"/>
+
